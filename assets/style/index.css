@@ -5,8 +5,8 @@
     margin-inline: auto;
 }
 
-.body {
-    background-color: #000;
+body {
+    background-color: #222;
 }
 
 .flexbox {
@@ -17,6 +17,164 @@
     top: 0;
 }
 
-.hero {
+header {
+    padding: 10px 80px;
+    font-size: 24px;
+    color: #fff;
+    background-color: #a544ff;
+    box-shadow: 0px 5px 15px rgb(0 0 0 / 0.5);
+    position: sticky;
+    top: 0;
+}
 
+/* - - - - - - - - - - - - -
+        HERO BANNER
+- - - - - - - - - - - - - - */ 
+
+section {
+    height: auto;
+    background: rgb(255 255 255 / 0.1) url("../img/big-bang.jpg");
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0px 5px 15px rgb(0 0 0 / 0.5);
+    overflow: hidden;
+}
+
+.hero {
+    color: #fff;
+    text-shadow: 5px 5px 10px #555;
+    text-align: center;
+    font-size: 50px;
+    margin: 200px 0;
+    animation: 2s ease-out text-scale 0s;
+    user-select: none;
+}
+
+/* - - - - - - - - - - - - -
+        ABOUT ME
+- - - - - - - - - - - - - - */ 
+
+.wrapper {
+    display: flex;
+    background-color: #333;
+    box-shadow: 0px 5px 15px rgb(0 0 0 / 0.5);
+    margin: 40px;
+    padding: 30px 50px;
+    border-radius: 10px;
+}
+
+h1 {
+   font-size: 38px;
+   text-align: center;
+}
+
+#about-me {
+    padding: 50px;
+}
+
+#about-me, #contact-me {
+    color: #fff;
+    font-size: 20px;
+}
+
+#about-me > p + p {
+    margin-top: 10px;
+    
+}   
+
+/* - - - - - - - - - - - - -
+        CONTACT ME
+- - - - - - - - - - - - - - */ 
+
+#contact-me {
+    padding: 20px;
+    height: auto;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+#contact-me > a {
+    font-size: 32px;
+    transition: 0.1s ease-in-out;
+    text-align: center;
+    text-decoration: none;
+    font-style: none;
+    color: #cd98ff;
+}
+
+#contact-me > a:hover {
+    color: #a544ff;  
+}
+
+/* - - - - - - - - - - - - -
+        DIVIDER
+- - - - - - - - - - - - - - */ 
+
+.divider {
+    background: url("../img/purple-space.jpg");
+    background-size: cover;
+    background-position: 0 -100px;
+    padding: 100px 0;
+    text-align: center;
+}
+
+/* - - - - - - - - - - - - -
+        FOOTER
+- - - - - - - - - - - - - - */ 
+
+.footer {
+    padding: 20px;
+    align-items: center;
+    background-color: #a544ff;
+}
+
+.footer h2 {
+    font-size: 18px;
+    text-align: center;
+    color: #555;
+}
+
+.social {
+    text-align: center;
+}
+
+.social a {
+    margin: 15px 10px;
+    font-size: 50px;
+    padding: 10px 0px;
+    text-decoration: none;
+}
+
+.fa-brands {
+    text-shadow: 1px 1px 10px rgb(255 255 255 / 0.1);
+    transition: 0.1s ease-in-out;
+    font-style: none;
+}
+
+.fa-twitter:hover {
+    color: #00f0f0;
+}
+
+.fa-instagram:hover {
+    color: #e7e700;
+}
+
+.fa-youtube:hover {
+    color: #f00;
+}
+
+.fa-github:hover {
+    color: #0f102f;
+}
+
+@keyframes text-scale {
+    0% {
+        opacity: 1;
+        scale: 100;
+    }
+
+    100% {
+        opacity: 1;
+        scale: 100%;
+    }
 }
